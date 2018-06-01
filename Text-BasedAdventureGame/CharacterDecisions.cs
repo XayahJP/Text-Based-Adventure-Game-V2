@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
 namespace Text_BasedAdventureGame
 {
     class DecisionsArray
@@ -97,3 +98,4 @@ namespace Text_BasedAdventureGame
         }
     }
 }
+*/
