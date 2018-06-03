@@ -6,16 +6,8 @@ using System.Threading.Tasks;
 
 namespace Text_BasedAdventureGame
 {
-    class items
+    class Items
     {
-        public static void ItemArray()
-        {
-            string[] items = {
-                    "Sword",
-                    "Bronze Key",
-                    "Letter",
-                    "Rock"
-                };
-        }
+
     }
 }

@@ -43,10 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CharacterDecisions.cs" />
-    <Compile Include="CharacterName.cs" />
-    <Compile Include="CharacterStats.cs" />
-    <Compile Include="EndGameFailure.cs" />
-    <Compile Include="EndGameSuccessful.cs" />
+    <Compile Include="Character.cs" />
     <Compile Include="Items.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

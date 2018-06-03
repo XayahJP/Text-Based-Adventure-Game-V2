@@ -8,10 +8,6 @@ namespace Text_BasedAdventureGame
 {
     class Program
     {
-        public void AddStat()
-        {
-
-        }
         public static void Main()
         {
             // Reference what is supposed to run

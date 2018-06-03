@@ -4,6 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+namespace Text_BasedAdventureGame
+{
+    public class Decisions
+    {
+        public Decisions Parent { get; set; }
+        public List<Decisions> Children { get; private set; }
+
+        public Decisions()
+        {
+            Children = new List<Decisions>();
+        }
+
+        public Decisions CreateChild()
+        {
+            return Parent; //Only here to not give an error for publid Decisions CreateChild() -> will be replaced ASAP
+        }
+    }
+}
+
 /*
 namespace Text_BasedAdventureGame
 {
