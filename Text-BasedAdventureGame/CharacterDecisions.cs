@@ -6,19 +6,25 @@ using System.Threading.Tasks;
 
 namespace Text_BasedAdventureGame
 {
-    public class Decisions
+    public class DecisionNode
     {
-        public Decisions Parent { get; set; }
-        public List<Decisions> Children { get; private set; }
+        public DecisionNode Parent { get; set; }
+        public List<DecisionNode> Children { get; private set; }
 
-        public Decisions()
+        public DecisionNode(DecisionNode node) // Need to change this - apparnently it's discarding values
         {
-            Children = new List<Decisions>();
+            Children = new List<DecisionNode>();
         }
 
-        public Decisions CreateChild()
+        public DecisionNode() // Nothing is wrong with having 2 ctors! Awesome :D
         {
-            return Parent; //Only here to not give an error for publid Decisions CreateChild() -> will be replaced ASAP
+            Children = new List<DecisionNode>();
+        }
+
+        public DecisionNode CreateChild() // Need to change - supposedly not relating itself to the current code
+        {
+            var rootNode = new DecisionNode();
+            var anotherNode = new DecisionNode(rootNode);
         }
     }
 }
