@@ -11,20 +11,20 @@ namespace Text_BasedAdventureGame
         public DecisionNode Parent { get; set; }
         public List<DecisionNode> Children { get; private set; }
 
-        public DecisionNode(DecisionNode node) // Need to change this - apparnently it's discarding values
+        public DecisionNode(DecisionNode node)
+        {
+            Children = new List<DecisionNode>();
+            Parent = node;
+        }
+
+        public DecisionNode()
         {
             Children = new List<DecisionNode>();
         }
 
-        public DecisionNode() // Nothing is wrong with having 2 ctors! Awesome :D
+        public DecisionNode CreateChild()
         {
-            Children = new List<DecisionNode>();
-        }
-
-        public DecisionNode CreateChild() // Need to change - supposedly not relating itself to the current code
-        {
-            var rootNode = new DecisionNode();
-            var anotherNode = new DecisionNode(rootNode);
+            return new DecisionNode(this);
         }
     }
 }
