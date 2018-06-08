@@ -10,7 +10,8 @@ namespace Text_BasedAdventureGame
     {
         public static void Main()
         {
-            // Reference what is supposed to run
+            DecisionNode decisionNode = new DecisionNode();
+            decisionNode.CreateChild();
         }
 
     }

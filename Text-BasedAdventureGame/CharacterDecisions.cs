@@ -23,7 +23,7 @@ namespace Text_BasedAdventureGame
         }
 
         public DecisionNode CreateChild()
-        {
+        { 
             return new DecisionNode(this);
         }
     }
